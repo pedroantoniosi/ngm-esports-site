@@ -5,10 +5,7 @@ export const camisas: Product[] = [
     id: 1,
     name: "Camisa Oficial",
     price: 89.9,
-    image: new URL(
-      "../assets/img/shop/camisas/shirt-oficial.png",
-      import.meta.url
-    ).href,
+    image: "../assets/img/shop/camisas/shirt-oficial.png",
     category: "camisas",
   },
   {
