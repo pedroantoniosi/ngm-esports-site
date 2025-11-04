@@ -23,7 +23,7 @@ export const acessorios: Product[] = [
     category: "acessorios",
   },
   {
-    id: 4,
+    id: 3,
     name: "Bandeira Alternativa",
     price: 79.9,
     image: "/src/assets/img/shop/acessorios/flag-alternative.png",

@@ -47,11 +47,6 @@
 .socials {
     display: flex;
     gap: 1rem;
-
-    & i {
-        color: #fff;
-        font-size: 1.6rem;
-    }
 }
 
 .socials a {
@@ -72,7 +67,9 @@
     padding-top: 1rem;
 }
 
-
+.ico {
+    color: red;
+}
 
 /* Responsivo */
 @media (max-width: 600px) {

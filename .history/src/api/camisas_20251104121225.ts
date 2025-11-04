@@ -12,7 +12,7 @@ export const camisas: Product[] = [
     id: 2,
     name: "Camisa Alternativa",
     price: 79.9,
-    image: "/src/assets/img/shop/camisas/shirt-alternative.png",
+    image: "/src/assets/img/shop/bones/hat-oficial.png",
     category: "camisas",
   },
 ];

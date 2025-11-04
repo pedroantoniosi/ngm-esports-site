@@ -26,16 +26,16 @@ const Footer = () => {
         </div>
 
         <div className={styles.col}>
-          <h4>Social</h4>
+          <h4>Redes</h4>
           <div className={styles.socials}>
             <a href="#" aria-label="Instagram">
-              <i className="icon bi bi-instagram"></i>
+              <i className="bi bi-instagram"></i>
             </a>
             <a href="#" aria-label="Twitter">
-              <i className="icon bi bi-twitter-x"></i>
+              <i className="bi bi-twitter-x"></i>
             </a>
             <a href="#" aria-label="YouTube">
-              <i className="icon bi bi-youtube"></i>
+              <i className="bi bi-youtube"></i>
             </a>
           </div>
         </div>

@@ -19,14 +19,14 @@ export const acessorios: Product[] = [
     id: 3,
     name: "Bandeira Oficial",
     price: 79.9,
-    image: "/src/assets/img/shop/acessorios/flag-oficial.png",
+    image: "../../src/assets/img/shop/acessorios/flag-oficial.png",
     category: "acessorios",
   },
   {
-    id: 4,
+    id: 3,
     name: "Bandeira Alternativa",
     price: 79.9,
-    image: "/src/assets/img/shop/acessorios/flag-alternative.png",
+    image: "../../src/assets/img/shop/acessorios/flag-alternative.png",
     category: "acessorios",
   },
 ];
