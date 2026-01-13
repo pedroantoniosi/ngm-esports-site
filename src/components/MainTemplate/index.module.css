@@ -1,0 +1,10 @@
+.mainTemplate {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+
+}
+
+footer {
+    margin-top: auto;
+}

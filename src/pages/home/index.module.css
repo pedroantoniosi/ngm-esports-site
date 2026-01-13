@@ -1,0 +1,35 @@
+@import "../../index.css";
+
+img {
+    border-radius: .8rem !important;
+}
+
+
+.productsContainer {
+    & img {
+        height: 400px;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    & h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    & p {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: .9rem;
+    }
+}
+
+.heroContainer {
+    & img {
+        height: 300px;
+    }
+}
+
+@media (min-width:1024px) {}

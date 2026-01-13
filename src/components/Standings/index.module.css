@@ -1,0 +1,49 @@
+.standingsContent {
+    display: grid;
+}
+
+
+thead,
+tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+thead {
+    & tr {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .8rem;
+        color: hsl(0, 0%, 55%) !important;
+    }
+}
+
+tbody {
+    & tr {
+        font-weight: 500;
+    }
+
+    & tr:hover {
+        cursor: pointer;
+        background-color: #1a1a1a;
+    }
+}
+
+tr {
+    display: flex;
+
+}
+
+th {
+    padding: 1rem 0;
+    display: flex;
+    align-items: start;
+    flex: 1;
+
+}
+
+td {
+    padding: .5rem 0;
+    flex: 1;
+
+}

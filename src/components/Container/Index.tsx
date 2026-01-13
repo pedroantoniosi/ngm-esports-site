@@ -1,12 +1,12 @@
-import type { ReactNode } from "react";
+import styles from "./index.module.css";
 
 type ContainerProps = {
-  children: ReactNode;
-  className?: string; // 👈 permite receber classes externas
+  children?: React.ReactNode;
+  className?: string;
 };
 
 const Container = ({ children, className }: ContainerProps) => {
-  return <div className={`container ${className || ""}`}>{children}</div>;
+  return <div className={`${styles.container} ${className}`}>{children}</div>;
 };
 
 export default Container;
