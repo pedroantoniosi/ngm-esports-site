@@ -26,7 +26,7 @@ function Home() {
 
         <section className={styles.productsContainer}>
           <Container>
-            <SectionTemplate sectionTitle="Ultimas Noticias">
+            <SectionTemplate sectionTitle="Ultimas Notícias">
               <SwiperNav
                 sliderNumber={3}
                 spaceBetween={16}
