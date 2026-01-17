@@ -1,8 +1,3 @@
 .navbarContainer {
-    background-color: var(--dark);
-    color: var(--light);
-}
-
-.navLink {
     color: var(--light);
 }

@@ -1,0 +1,11 @@
+.navLink {
+    padding: .4rem .8rem;
+    color: var(--light);
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 20rem;
+
+    &:hover {
+        background-color: #435c72;
+    }
+}

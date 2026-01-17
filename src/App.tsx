@@ -1,6 +1,6 @@
 import Home from "./pages/home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import News from "./pages/news/News";
+import News from "@/pages/news";
 
 function App() {
   return (

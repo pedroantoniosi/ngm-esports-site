@@ -1,17 +1,23 @@
 import { useState } from "react";
 import styles from "./index.module.css";
 import { getDrivers } from "@/api/drivers";
-import type { Driver } from "@/types/driver";
 
-type DriversProps = {
-  renderNumber?: number;
+type StandingsProps = {
+  className?: string;
 };
 
-const DriverStandings = ({ renderNumber = 5 }: DriversProps) => {
-  const [drivers] = useState<Driver[]>(() => getDrivers());
+const DriverStandings = ({ className }: StandingsProps) => {
+  const drivers = getDrivers();
+
+  const [opened, setOpened] = useState(false);
+
+  //Função que retorna o valor inverso de opened
+  const toggleDisplay = () => {
+    setOpened(!opened);
+  };
 
   return (
-    <div className={styles.standingsContent}>
+    <div className={`${styles.standingsContent} ${className}`}>
       <table className={styles.driversTable}>
         <thead>
           <tr>
@@ -24,7 +30,7 @@ const DriverStandings = ({ renderNumber = 5 }: DriversProps) => {
         </thead>
 
         <tbody>
-          {drivers.slice(0, renderNumber).map((driver, index) => (
+          {drivers.slice(0, 5).map((driver, index) => (
             <tr key={driver.id}>
               <td>{index + 1}</td>
               <td>{driver.name}</td>
@@ -35,6 +41,9 @@ const DriverStandings = ({ renderNumber = 5 }: DriversProps) => {
           ))}
         </tbody>
       </table>
+      <button className={styles.btnLight} onClick={toggleDisplay}>
+        {opened ? "Ver Menos" : "Vem Tabela Completa"}
+      </button>
     </div>
   );
 };

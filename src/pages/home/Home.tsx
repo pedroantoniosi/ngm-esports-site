@@ -7,13 +7,14 @@ import products from "@/api/ProductsApi";
 import news from "@/api/NewsApi";
 import SwiperNav from "@/components/SliderNavigation";
 import { SwiperSlide } from "swiper/react";
+import Standings from "@/components/Standings";
 
 function Home() {
   return (
     <>
       <MainTemplate>
         <section className={styles.heroContainer}>
-          <Container>
+          <Container className={styles.heroContent}>
             <Card
               img="/src/assets/img/news1.png"
               title="Data para os testes da pré-temporada"
@@ -21,6 +22,7 @@ function Home() {
               variant="news"
               className={styles.mainBanner}
             />
+            <Standings className={"p-2"} />
           </Container>
         </section>
 
@@ -44,9 +46,9 @@ function Home() {
 
         <section className={styles.productsContainer}>
           <Container>
-            <SectionTemplate sectionTitle="Aproveita essa oportunidade de ter ótimos descontos">
+            <SectionTemplate sectionTitle="Em breve teremos produtos com preços super acessiveis">
               <SwiperNav
-                sliderNumber={3}
+                sliderNumber={4}
                 spaceBetween={16}
                 sliderNumberMobile={1.1}
               >
