@@ -1,21 +1,27 @@
-import type React from "react";
+import React from "react";
 import styles from "./index.module.css";
+import Container from "../Container";
 
-type sectionTemplateProps = {
-  sectionTitle: string;
-  className?: string;
+type sectionProps = {
+  title: string;
   children?: React.ReactNode;
+  className?: string;
 };
-
-const SectionTemplate = ({ children, sectionTitle }: sectionTemplateProps) => {
+export default function SectionTemplate({
+  title,
+  children,
+  className,
+}: sectionProps) {
   return (
     <>
-      <div className={styles.sectionTemplate}>
-        <h2 className="py-1 text-uppercase">{sectionTitle}</h2>
-        <div className={styles.sectionContent}>{children}</div>
-      </div>
+      <section className={styles.sectionTitle}>
+        <Container>
+          <h2 className={`${styles.title} py-1`}>{title}</h2>
+          <div className={`${styles.sectionContent} ${className}`}>
+            {children}
+          </div>
+        </Container>
+      </section>
     </>
   );
-};
-
-export default SectionTemplate;
+}

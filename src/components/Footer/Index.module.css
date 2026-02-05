@@ -1,8 +1,23 @@
 .footerContainer {
-    background-color: #000;
+    border-top: 2px solid;
+    border-image: linear-gradient(to right,
+            rgb(225, 225, 225) 0%,
+            rgba(121, 121, 121, 0.527) 45%,
+            transparent 46%,
+            transparent 55%,
+            rgba(126, 126, 126, 0.507) 56%,
+            rgb(225, 225, 225) 100%) 1;
 
     & .container {
         display: flex;
         justify-content: space-between;
     }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .footerContainer {
+        padding: 4rem 0;
+    }
+
 }

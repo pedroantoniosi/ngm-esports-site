@@ -11,8 +11,23 @@ export default function Navlinks() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/standings" className={styles.navLink}>
+          <NavLink to="/News" className={styles.navLink}>
+            News
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/standingsPage" className={styles.navLink}>
             Standings
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/standingsPage" className={styles.navLink}>
+            Shop
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/login" className={styles.navLink}>
+            Login
           </NavLink>
         </li>
       </ul>

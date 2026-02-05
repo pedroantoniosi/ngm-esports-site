@@ -27,9 +27,9 @@ const CardTemplate = ({
       </div>
 
       <div className={styles.caption}>
-        {title && <h2 className={styles.title}>{title}</h2>}
-        {text && <p className={styles.text}>{text}</p>}
-        {date && <span className={styles.date}>{date}</span>}
+        {title && <h2 className={`${styles.title} title`}>{title}</h2>}
+        {text && <p className={`${styles.text} text`}>{text}</p>}
+        {date && <span className={`${styles.misc} misc`}>{date}</span>}
       </div>
     </div>
   );

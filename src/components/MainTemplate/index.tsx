@@ -9,11 +9,11 @@ type MainTemplateProps = {
 function MainTemplate({ children }: MainTemplateProps) {
   return (
     <>
-      <main className={styles.mainTemplate}>
+      <div className={styles.mainTemplate}>
         <Navbar></Navbar>
-        {children}
+        <main className={styles.mainTemplateContent}>{children}</main>
         <Footer></Footer>
-      </main>
+      </div>
     </>
   );
 }

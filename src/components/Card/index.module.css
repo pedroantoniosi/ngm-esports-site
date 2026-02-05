@@ -8,13 +8,20 @@
 
     & img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
     & .title {
-        font-size: clamp(1rem, 1vw .1rem, 1.1rem);
+        padding: .5rem 0;
     }
 
+    & .text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 }
 
 
@@ -27,14 +34,7 @@
         border: .2rem;
     }
 
-    & .title {
-        padding: .5rem 0;
-        font-size: 1rem;
-    }
 
-    & .text {
-        font-size: .8rem;
-    }
 }
 
 
@@ -54,52 +54,20 @@
         position: absolute;
         bottom: 0;
         background: linear-gradient(0deg, rgb(0, 0, 0) 0%, transparent 100%);
-
-        & .title {
-            font-size: 1.3rem;
-        }
     }
 }
 
 
 @media (min-width: 1024px) {
-    .news.card {
 
-        & .caption {
-            & .title {
-                font-size: 1.3rem;
-            }
-        }
+    /* ========================= */
+    /* ASIDE VARIANT      */
+    /* ========================= */
 
-        &:nth-child(1) {
-            & .title {
-                font-size: 1.4rem;
-            }
-        }
-    }
-
-}
-
-/* ========================= */
-/* ASIDE VARIANT      */
-/* ========================= */
-
-.aside.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    & .title {
-        font-size: 1.1rem;
-    }
-
-    & .text {
-        display: -webkit-box;
-        font-size: .9rem;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+    .aside.card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
         overflow: hidden;
-
     }
 }

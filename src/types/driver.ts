@@ -3,5 +3,5 @@ export type Driver = {
   name: string;
   state: string;
   team: string;
-  points: number;
+  pts: number;
 };
