@@ -8,10 +8,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --primaryColor: #00162B;
+  --secondaryColor: #0031D4;
   --light: #fff;
   --dark: #000;
   background-color: var(--primaryColor);
 }
+
+.btn {
+  padding: 1rem;
+  margin: 1rem auto 0 auto;
+  max-width: 20rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 20rem;
+
+  &:hover {
+    filter: brightness(85%);
+  }
+}
+
+.btnSecondary {
+  background-color: var(--secondaryColor);
+  color: var(--light);
+}
+
+
+
 
 .bg-primary {
   background-color: var(--primaryColor);

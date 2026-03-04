@@ -50,9 +50,8 @@ function Home() {
             className={styles.heroContent}
           >
             <Card
-              img="/src/assets/img/banner.png"
-              title="Data para os testes da pré-temporada"
-              text="Acompanhe agora mesmo!"
+              img="/src/assets/img/banner.jpg"
+              title="Fim  dos Testes no Bahrain"
               variant="news"
               className={styles.mainBanner}
             />
@@ -83,7 +82,7 @@ function Home() {
 
               <button
                 onClick={() => navigate("/standingsPage")}
-                className={styles.btnLight}
+                className={`btn btnSecondary`}
               >
                 Ver Todos
               </button>
@@ -107,16 +106,16 @@ function Home() {
           </SectionTemplate>
         </section>
 
-        <SectionTemplate title="Kits">
+        <SectionTemplate title="Wallpaper Kits">
           <div className={`${styles.kitsContainer} row-auto gap-1`}>
             <Card
-              title="Kit Oficial do Time de 2026"
-              img="/src/assets/img/banner2.png"
+              title="Wallpaper Oficiais 2026"
+              img="/src/assets/img/wallpaper.png"
               variant="news"
             />
             <Card
               title="Wallpaper Oficiais 2025"
-              img="/src/assets/img/wallpaper.png"
+              img="/src/assets/img/wallpaper2.jpg"
               variant="news"
             />
           </div>
