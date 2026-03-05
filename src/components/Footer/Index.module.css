@@ -14,6 +14,28 @@
     }
 }
 
+a {
+    color: var(--light);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--text-color);
+    }
+}
+
+.socialLinks {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & i {
+        color: var(--light);
+        font-size: 2rem;
+    }
+}
+
+
 
 @media only screen and (min-width: 1025px) {
     .footerContainer {

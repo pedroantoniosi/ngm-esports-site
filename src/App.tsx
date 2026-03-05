@@ -1,8 +1,7 @@
-import Home from "./pages/home/Home";
+import Home from "./pages/home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StandingsPage from "@/pages/standingsPage";
-import Login from "@/pages/login/Login";
-import News from "./pages/news/News";
+import News from "./pages/news";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/standingsPage" element={<StandingsPage />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/News" element={<News />} />
         </Routes>
       </BrowserRouter>

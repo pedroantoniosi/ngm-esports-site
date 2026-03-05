@@ -11,6 +11,7 @@
   --secondaryColor: #0031D4;
   --light: #fff;
   --dark: #000;
+  --text-color: hsl(0, 0%, 85%);
   background-color: var(--primaryColor);
 }
 

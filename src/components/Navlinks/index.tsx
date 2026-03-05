@@ -7,27 +7,22 @@ export default function Navlinks() {
       <ul className="row gap-1">
         <li>
           <NavLink to="/" end className={styles.navLink}>
-            Home
+            Início
           </NavLink>
         </li>
         <li>
           <NavLink to="/News" className={styles.navLink}>
-            News
+            Notícias
           </NavLink>
         </li>
         <li>
           <NavLink to="/standingsPage" className={styles.navLink}>
-            Standings
+            Classificação
           </NavLink>
         </li>
         <li>
           <NavLink to="/standingsPage" className={styles.navLink}>
             Shop
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/login" className={styles.navLink}>
-            Login
           </NavLink>
         </li>
       </ul>

@@ -1,23 +1,27 @@
-import StandingsTemplate from "../StandingsTemplate";
-import styles from "./index.module.css";
 import { getDrivers } from "@/api/Drivers";
 
-const DriverStandings = () => {
+type DriverStandingsProps = {
+  limit?: number;
+};
+
+const DriverStandings = ({ limit }: DriverStandingsProps) => {
   const drivers = getDrivers();
+
+  const sortedDrivers = drivers.sort((a, b) => b.pts - a.pts);
+  const visibleDrivers = limit ? sortedDrivers.slice(0, limit) : sortedDrivers;
+
   return (
-    <StandingsTemplate className={styles.standings}>
-      {drivers
-        .sort((a, b) => b.pts - a.pts)
-        .map((driver, index) => (
-          <tr key={driver.id}>
-            <td>{index + 1}</td>
-            <td>{driver.name}</td>
-            <td>{driver.state}</td>
-            <td>{driver.team}</td>
-            <td>{driver.pts}</td>
-          </tr>
-        ))}
-    </StandingsTemplate>
+    <>
+      {visibleDrivers.map((driver, index) => (
+        <tr key={driver.id}>
+          <td>{index + 1}</td>
+          <td>{driver.name}</td>
+          <td>{driver.state}</td>
+          <td>{driver.team}</td>
+          <td>{driver.pts}</td>
+        </tr>
+      ))}
+    </>
   );
 };
 

@@ -73,7 +73,7 @@ const rawDrivers = [
     id: 23,
     name: "Gustavo Brudszenski",
     state: "Brazil",
-    team: "TEAM 8",
+    team: "TBT",
     pts: 0,
   },
   { id: 24, name: "Rafael Danin", state: "Brazil", team: "TBT", pts: 0 },
